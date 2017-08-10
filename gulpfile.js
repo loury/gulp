@@ -18,10 +18,15 @@ gulp.task('Thtmlmin',function(){
         .pipe(gulpLoadPs.livereload());
   });
 //livereload：实时刷新页面
-gulp.task('reload', function() {
+gulp.task('LReload', function() {
   gulp.src('src/**/*.*')//定义任务操作的对象
         .pipe(gulpLoadPs.livereload());//文件流传给livereload插件
     gulpLoadPs.livereload.listen();//调用livereload的api
-    gulp.watch('src/**/*.*',['reload']);//watch监听文件变化，包括src文件夹及其子文件夹里的内容
+    gulp.watch('src/**/*.*',['LReload']);//watch监听文件变化，包括src文件夹及其子文件夹里的内容
 });
+//brower sync：实时刷新页面
+gulp.task('BReload',function(){
+  
+  })
+
 
