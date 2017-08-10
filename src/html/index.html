@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	<title>博客首页</title>
+	<link rel="stylesheet" type="text/css" href="css/blog-index.css"/>
+	<link  rel="stylesheet" type="text/css" href="css/cor.css"/>
+	<script src="js/jquery.js"></script>
+	<script src="js/blog-index.js"></script>
+	<script src="js/cor.js"></script>
+</head>
+	<!-- 本实例中，class用于定义样式，id用于绑定事件 -->
+
+<body>
+	<!--整个容器-->
+	<div class="layout" id="layout" >
+		<!-- 顶部固定层-->
+		<div class="tool" id="tool">
+			<div class="tool-cover">
+				<!-- 靠左的选项 -->
+				<a href="aboutMe.html">
+					<div class="host">张小洛</div>
+				</a>
+
+				<!--靠右边的选项-->
+				<div class="menu" id="menu">
+					<span>MENU</span>
+					<img src="images/menu.svg"/>
+				</div>
+
+				<!--菜单栏 -->
+				<div class="menu-selection" id="menu-selection">
+					<div class="close" id="close">X</div>
+					<ul>
+						<li>
+							<a id="toIndex" >首页</a>
+						</li>
+						<hr/>
+						<li>
+							<a href="aboutMe.html">关于我</a>
+						</li>
+						<hr/>
+						<li>
+							<a href="temp.html">友链</a>
+						</li>
+						<hr/>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- 侧边固定层 -->
+		<div>
+			<!-- 回到顶部 -->
+			<div class="go-top" id="goTop">
+				<div class="case" id="case">
+					<img src="images/goTop.svg" width="50px" height="50px"/>
+					<p>
+						回到
+						<br/>
+						顶部
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- 欢迎页 -->
+		<div class="wel-page" id="wel-page">
+			<div class="wel-page-cover">
+				<!-- 文本 -->
+				<div class="text">
+					<hr/>
+					<h1>大标题</h1>
+					<hr/>
+					<p>在追梦的路上</p>
+					<p>视死如归</p>
+				</div>
+				<!-- 更多 -->
+				<div class="more" id="more">MORE</div>
+			</div>
+		</div>
+
+		<!-- 首页 -->
+		<div class="index" id="index">
+			<div class="container">
+
+				<!--主页左侧-->
+				<div class="container-left">
+					<!--博主信息-->
+					<div class="per-message">
+						<div class="head-image">
+							<a href="aboutMe.html">
+								<img src="images/headImage.png" width="80" height="80" />
+							</a>
+						</div>
+						<div class="per-message-txt">
+							<p class="big">
+								<a href="aboutMe.html">张小洛</a>
+							</p>
+							<p class="small">在追梦的路上</p>
+							<p class="small">视死如归</p>
+						</div>
+					</div>
+
+					<!-- 搜索 -->
+					<div class="search">
+						<form action="#" >
+							<input type="text" class="search-txt"/>
+							<input type="button" class="search-btn"  value="搜索"/>
+						</form>
+					</div>
+
+					<!--以下三部分每个li里都要有一个对应的随笔数量（暂未实现） -->
+					<div class="mylabel">
+						<h3 class="label-title">我的标签</h3>
+						<hr/>
+						<ul>
+							<li>
+								<a href="temp.html" target="_blank">sublime</a>
+							</li>
+							<li>
+								<a href="temp.html" target="_blank">工具</a>
+							</li>
+							<li>
+								<a href="temp.html" target="_blank">表单</a>
+							</li>
+							<li>
+								<a href="temp.html" target="_blank">设计灵感</a>
+							</li>
+							<li>
+								<a href="temp.html" target="_blank">优化</a>
+							</li>
+						</ul>
+					</div>
+
+					<!-- 随笔分类 -->
+					<div class="mylabel">
+						<!-- 这个分类有点不太合理 -->
+						<h3 class="label-title">随笔分类</h3>
+						<hr/>
+						<ul>
+							<li>
+								<a href="temp.html" target="_blank">javascript</a>
+							</li>
+							<li>
+								<a href="temp.html" target="_blank">css/html</a>
+							</li>
+							<li>
+								<a href="temp.html" target="_blank">php</a>
+							</li>
+							<li>
+								<a href="temp.html" target="_blank">随手记</a>
+							</li>
+						</ul>
+					</div>
+
+					<!-- 随笔档案 -->
+					<div class="mylabel">
+						<h3 class="label-title">随笔档案</h3>
+						<hr/>
+						<ul>
+							<li>
+								<a href="temp.html" target="_blank">2016年7月</a>
+							</li>
+							<li>
+								<a href="temp.html" target="_blank">2016年6月</a>
+							</li>
+							<li>
+								<a href="temp.html" target="_blank">2016年5月</a>
+							</li>
+							<li>
+								<a href="temp.html" target="_blank">2016年4月</a>
+							</li>
+							<li>
+								<a href="temp.html" target="_blank">2016年3月</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- 主页右侧 -->
+				<div class="container-right">
+
+					<!-- 轮播图 -->
+					<div class="cor">
+						<div class="cor-img" id="corImg">
+							<ul>
+								<li><a href="temp.html" target="_blank" >
+									
+										<img src="images/corousel1.png" alt="" width="1000" height="400"/>
+									</a>
+								</li>
+								<li>
+									<a href="temp.html" target="_blank" >
+										<img src="images/corousel2.png" alt="" width="1000px" height="400px"/>
+									</a>
+								</li>
+								<li>
+									<a href="temp.html" target="_blank" >
+										<img src="images/corousel3.png" alt="" width="1000px" height="400px"/>
+									</a>
+								</li>
+								<li>
+									<a href="temp.html" target="_blank" >
+										<img src="images/corousel4.png" alt="" width="1000px" height="400px"/>
+									</a>
+								</li>
+								<li>
+									<a href="temp.html" target="_blank" >
+										<img src="images/corousel5.png" alt="" width="1000px" height="400px"/>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- 控制切换 -->
+						<div class="contr" id="contr">
+							<!-- 切换按钮 -->
+							<div class="btn" id="btn">
+								<div class="prev" id="btnPrev"></div>
+								<div class="next" id="btnNext"></div>
+							</div>
+							<!-- 切换点 -->
+							<div class="inlist" id="inlist">
+								<ul>
+									<li class="inlistOff inlistOn">1</li>
+									<li class="inlistOff">2</li>
+									<li class="inlistOff">3</li>
+									<li class="inlistOff">4</li>
+									<li class="inlistOff">5</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<!-- 博文简述 -->
+					<div class="post">
+						<div class="post-txt">
+							<h4>Javascript——touch事件基础</h4>
+							<div class="post-msg">
+								<div class="m-time">2016年7月7号</div>
+								<div class="writer">作者：张小洛</div>
+								<div class="group">
+									分类：
+									<a href="temp.html" target="_blank"">随手记</a>
+								</div>
+								<div class="group">
+									标签：
+									<a href="temp.html" target="_blank"">javascript</a> <em>&nbsp</em>
+									<a href="temp.html" target="_blank"">css</a>
+								</div>
+							</div>
+							<hr/>
+							<div class="post-con">
+								<div class="p-img">
+									<img src="images/post.jpg" width="100%" height="170"/>
+								</div>
+								<div class="p-txt">
+									<p>
+										touchstart //手指刚接触屏幕时触发
+										<br>
+										touchmove //手指在屏幕上移动时触发
+										<br>touchend //手指从屏幕上移开时触发</p>
+									<p>
+										下面这个比较少用：
+										<br>touchcancel //触摸过程被系统取消时触发</p>
+									<p>每个事件都有以下列表，比如touchend的targetTouches当然是 0 咯：</p>
+									……
+									<a href="post.html" target="_blank">阅读全文</a>
+								</div>
+							</div>
+						</div>
+						<div class="post-txt">
+							<h4>Javascript——touch事件介绍与实例演示</h4>
+							<div class="post-msg">
+								<div class="m-time">2016年7月7号</div>
+								<div class="writer">作者：张珞洛</div>
+								<div class="group">
+									分类：
+									<a href="temp.html" target="_blank"">随手记</a>
+								</div>
+								<div class="group">
+									标签：
+									<a href="temp.html" target="_blank"">javascript</a> <em>&nbsp</em>
+									<a href="temp.html" target="_blank"">css</a>
+								</div>
+							</div>
+							<hr/>
+							<div class="post-con">
+								<div class="p-img">
+									<img src="images/post.jpg" width="100%" height="170"/>
+								</div>
+								<div class="p-txt">
+									前言 随着移动网络的发展，其能够支持越来越复杂的应用，web开发者需要一种方法来处理这些事件。例如，几乎所有的快节奏游戏都需要玩家一次按下多个按钮，这种方式，在触摸屏情况下，意味着多点触摸。      Apple在iOS 2.0中引入了……
+									<a href="temp.html"  target="_blank">阅读全文</a>
+								</div>
+							</div>
+						</div>
+						<div class="post-txt">
+							<h4>Javascript——touch事件介绍与实例演示</h4>
+							<div class="post-msg">
+								<div class="m-time">2016年7月7号</div>
+								<div class="writer">作者：张小洛</div>
+								<div class="group">
+									分类：
+									<a href="temp.html" target="_blank"">随手记</a>
+								</div>
+								<div class="group">
+									标签：
+									<a href="temp.html" target="_blank"">javascript</a>
+									<em>&nbsp</em>
+									<a href="temp.html" target="_blank"">css</a>
+								</div>
+							</div>
+							<hr/>
+							<div class="post-con">
+								<div class="p-img">
+									<img src="images/post.jpg" width="100%" height="170"/>
+								</div>
+								<div class="p-txt">
+									前言  随着移动网络的发展，其能够支持越来越复杂的应用，web开发者需要一种方法来处理这些事件。例如，几乎所有的快节奏游戏都需要玩家一次按下多个按钮，这种方式，在触摸屏情况下，意味着多点触摸。      Apple在iOS 2.0中引入了……
+									<a href="temp.html"  target="_blank">阅读全文</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 页脚 -->
+			<div class="footer"></div>
+		</div>
+	</div>
+</body>
+</html>

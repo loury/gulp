@@ -1,0 +1,96 @@
+
+.cor {
+	margin: 10px auto;
+	width: 1000px;
+	height: 400px;
+	overflow: hidden;
+}
+.cor-img {
+	transition: none;
+	-moz-transition: none;
+	-webkit-transition: none;
+	-o-transition: none;
+}
+.cor .cor-img {
+	width: 5000px;
+	height: 400px;
+	position: relative;
+
+}
+.cor .cor-img ul li {
+	float: left;
+	list-style-type: none;
+}
+.cor .cor-img ul li a {
+	display: block;
+	width: 1000px;
+	height: 400px;
+}
+.cor .cor-img ul li a img {
+	display: block;/* 内联元素a内嵌套其他元素会有多余的空间 */
+}
+.cor .contr {
+	/* 不能设宽高，设置宽高后，相当于整个控制层覆盖在图片层上，使得鼠标无法点击图片层进入链接地址 */
+	position: absolute;
+	top: -0px;
+	
+}
+.cor .contr .btn {
+	width: 1000px;
+	position: relative;
+	top: 160px;
+}
+ .cor .contr .btn div {
+ 	cursor:pointer;
+	transition: none;
+	-moz-transition: none;
+	-webkit-transition: none;
+	-o-transition: none;
+}
+.cor .contr .btn .prev {
+	width: 30px;
+	height: 60px;
+	float: left;
+	background: url("../images/changeBtn.svg");
+	background-position: 0 -60px;
+}
+.cor .contr .btn .next {
+	width: 30px;
+	height: 60px;
+	float: right;
+	background: url("../images/changeBtn.svg");
+}
+.cor .contr .btn .prev:hover {
+	background-color: rgba(97, 92, 92, 0.4);
+}
+.cor .contr .btn .next:hover {
+	background-color: rgba(97, 92, 92, 0.4);
+}
+.cor .contr .inlist ul {
+	width: 150px;
+	height: 20px;
+	position: relative;
+	top: 350px;
+	left: -75px;
+	margin-left: 50%;
+}
+.inlistOff {
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	margin: 0 5px;
+	float: left;
+	text-align: center;
+	background: url("../images/change-point.svg");
+	cursor: pointer;
+	color: #fff;
+	font-family: "华文新魏";
+	background-position: 0 -0;/* Why这个没有，inlistOn会被覆盖 */
+}
+.inlistOff:hover {
+	background-position: 0 -20px;
+}
+/* 再inlistOff之后，保证inlistOn的优先级大于inlistOff */
+.inlistOn {
+	background-position: 0 -20px;
+}
